@@ -12,7 +12,10 @@ package array;
 *
 *
 * trick : how to store 2 numbers at same index?
-*
+*  arr[i] + (arr[second_index_to_be_replaced_at_i] % multiplyer * multiplyer);
+* here multiplyer is number greater than max number in arr
+* so always by doing curr_value% multiplyer operation, arr[i] : original value can be retrieved
+* And to get replaced number just do  curr_val / multiplyer
 * */
 public class MaxMinPatternSortedArray {
 
